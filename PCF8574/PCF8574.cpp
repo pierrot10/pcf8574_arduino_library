@@ -39,7 +39,12 @@ void PCF8574::begin(uint8_t address) {
 }
 
 void PCF8574::pinMode(uint8_t pin, uint8_t mode) {
-
+	/*
+	DEBUG_PRINT("Set pin ");
+	DEBUG_PRINT(pin);
+	DEBUG_PRINT(" as ");
+	DEBUG_PRINTLN(mode);
+	*/
 	/* Switch according mode */
 	switch (mode) {
 	case INPUT:
